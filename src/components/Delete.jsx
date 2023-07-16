@@ -17,15 +17,10 @@ export default function Delete({ setDeleteData, deleteData, setLastUpdate }) {
       <div className="modal-dialog modal-dialog-centered">
         <div className="modal-content">
           <div className="modal-header">
-            <h5 className="modal-title">Delete Account</h5>
-            <button
-              type="button"
-              className="btn-close"
-              onClick={(_) => setDeleteData(null)}
-            ></button>
+            
           </div>
           <div className="modal-body">
-            <p>Are you sure you want to delete this BANK ACCOUNT?</p>
+            <p>Are you want to delete Account?</p>
           </div>
           <div className="modal-footer">
             <button
@@ -33,14 +28,14 @@ export default function Delete({ setDeleteData, deleteData, setLastUpdate }) {
               className="nice green small no"
               onClick={(_) => setDeleteData(null)}
             >
-              No way
+              No
             </button>
             <button
               type="button"
               className="nice red small no"
               onClick={doDestroy}
             >
-              Delete
+              Yes-Delete
             </button>
           </div>
         </div>

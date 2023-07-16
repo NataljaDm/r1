@@ -1,5 +1,4 @@
 import "./App.scss";
-import "bootstrap/dist/css/bootstrap.min.css";
 import "./Button.scss";
 import { useEffect, useState } from "react";
 import { get, store, updateAccountBalance } from "./Functions/localStorage";
@@ -10,7 +9,7 @@ export const KEY = "accounts";
 function App() {
   const [name, setName] = useState("");
   const [lastName, setLastName] = useState("");
-  const [balance] = useState(0);
+  const [balance, setBalance] = useState(0);
   const [amount, setAmount] = useState(0);
   const [accounts, setAccounts] = useState(null);
   const [lastUpdate, setLastUpdate] = useState(Date.now());
@@ -82,14 +81,14 @@ function App() {
             <div className="row">
               <div className="col-12 col d-flex justify-content-center">
                 <div className="card">
-                  <h1 className="card-header">Create new bank account</h1>
+                  <h1 className="card-header">Bankas</h1>
                   <div className="card-body">
                     <div className="card-title">
                       <fieldset>
-                        <legend>Person information</legend>
+                        <legend>Informacija</legend>
                         <div>
                           <legend>
-                            Name:
+                            Vardas:
                             <input
                               type="text"
                               value={name}
@@ -97,7 +96,7 @@ function App() {
                             />
                           </legend>
                           <legend>
-                            Last Name:
+                            Pavardė:
                             <input
                               type="text"
                               value={lastName}
@@ -106,7 +105,7 @@ function App() {
                           </legend>
                         </div>
                         <button className="blue small" onClick={handleCreate}>
-                          Create New Account!
+                          Sukurti naują sąskaitą
                         </button>
                       </fieldset>
                     </div>
@@ -116,16 +115,16 @@ function App() {
             </div>
             <div className="col-12">
               <div className="card mt-4">
-                <h1 className="card-header">Bank Accounts</h1>
+                <h1 className="card-header">Sąrasas</h1>
                 <div className="card-body"></div>
                 <table className="table table-striped">
                   <thead>
                     <tr>
-                      <th>Full Name</th>
-                      <th>Account Balance</th>
-                      <th>Enter Amount</th>
-                      <th>Edit Balance</th>
-                      <th>Account settings</th>
+                      <th>Sąrašas</th>
+                      <th>Pinigų balansas</th>
+                      <th>Suma</th>
+                      <th></th>
+                      <th></th>
                     </tr>
                   </thead>
                   <tbody>
@@ -152,13 +151,13 @@ function App() {
                               className="green small"
                               onClick={() => handleAddFunds(account.id)}
                             >
-                              Add Funds
+                              Pridėti lėšų
                             </button>
                             <button
                               className="green small"
                               onClick={() => handleChargeFunds(account.id)}
                             >
-                              Charge Funds
+                              Nuskaičiuoti lėšas
                             </button>
                           </td>
                           <td>
@@ -166,7 +165,7 @@ function App() {
                               className="red small"
                               onClick={(_) => setDeleteData(account)}
                             >
-                              DELETE ACCOUNT
+                              Ištrinti 
                             </button>
                           </td>
                         </tr>

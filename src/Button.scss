@@ -50,11 +50,11 @@ button {
 
     &.red {
         &:after {
-            background-color: red;
+            background-color: rgb(214, 25, 135);
         }
 
         &:before {
-            background-color: darken(red, 15%);
+            background-color: darken(rgb(214, 25, 135), 15%);
         }
     }
 
@@ -69,34 +69,24 @@ button {
         }
     }
 
-    &.white {
-        color: black;
-        &:after {
-            background-color: white;
-        }
-
-        &:before {
-            background-color: darken(white, 15%);
-        }
-    }
 
     &.blue {
         &:after {
-            background-color: blue;
+            background-color: rgb(158, 84, 228);
         }
 
         &:before {
-            background-color: darken(blue, 15%);
+            background-color: darken(rgb(158, 84, 228), 15%);
         }
     }
 
     &.green {
         &:after {
-            background-color: green;
+            background-color: rgb(87, 170, 20);
         }
 
         &:before {
-            background-color: darken(green, 15%);
+            background-color: darken(rgb(87, 170, 20), 15%);
         }
     }
 
