@@ -17,11 +17,11 @@ export default function Delete({ setDeleteData, deleteData, setLastUpdate }) {
       <div className="modal-dialog modal-dialog-centered">
         <div className="modal-content">
           <div className="modal-header">
-          <h5 className="modal-title"></h5>
+          <h5 className="modal-title">Uždaryti</h5>
             <button type="button" className="dark around" onClick={_ => setDeleteData(null)}>X</button>
           </div>
           <div className="modal-body">
-            <p>Delete Account?</p>
+            <p>Ar tikrai ištrinti?</p>
           </div>
           <div className="modal-footer">
             <button
@@ -29,14 +29,14 @@ export default function Delete({ setDeleteData, deleteData, setLastUpdate }) {
               className="nice green small no"
               onClick={(_) => setDeleteData(null)}
             >
-              No
+              Ne-palikti
             </button>
             <button
               type="button"
               className="nice red small no"
               onClick={doDestroy}
             >
-              Yes-Delete
+              Taip-ištrinti
             </button>
           </div>
         </div>
