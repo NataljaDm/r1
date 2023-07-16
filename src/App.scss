@@ -63,6 +63,16 @@ input[type="text"] {
 
 .modal.show {
   display: block;
-  background-color: #17010845;
+  background-color: #b8c3c545;
   color: black;
+  
+}
+h5 {
+  display: block;
+  font-size: 0.83em;
+  margin-block-start: .3em;
+  margin-block-end: .3em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
 }

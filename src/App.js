@@ -154,7 +154,7 @@ function App() {
                               Pridėti lėšų
                             </button>
                             <button
-                              className="green small"
+                              className="yellow small"
                               onClick={() => handleChargeFunds(account.id)}
                             >
                               Nuskaičiuoti lėšas

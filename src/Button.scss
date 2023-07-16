@@ -50,22 +50,22 @@ button {
 
     &.red {
         &:after {
-            background-color: rgb(214, 25, 135);
+            background-color: rgb(214, 25, 50);
         }
 
         &:before {
-            background-color: darken(rgb(214, 25, 135), 15%);
+            background-color: darken(rgb(214, 25, 50), 15%);
         }
     }
 
     &.yellow {
         color: black;
         &:after {
-            background-color: yellow;
+            background-color: rgb(13, 138, 61);
         }
 
         &:before {
-            background-color: darken(yellow, 15%);
+            background-color: darken(rgb(13, 138, 61), 15%);
         }
     }
 
@@ -82,11 +82,21 @@ button {
 
     &.green {
         &:after {
-            background-color: rgb(87, 170, 20);
+            background-color: rgb(159, 231, 24);
         }
 
         &:before {
-            background-color: darken(rgb(87, 170, 20), 15%);
+            background-color: darken(rgb(159, 231, 24), 15%);
+        }
+    }
+
+    &.dark {
+        &:after {
+            background-color: rgb(65, 65, 77);
+        }
+
+        &:before {
+            background-color: darken(rgb(10, 10, 10), 15%);
         }
     }
 
@@ -99,6 +109,10 @@ button {
         padding: 1rem 1.5rem;
         font-size: 1.2rem;
     }
-
+    &.around {
+        padding: .2rem .5rem;
+        font-size: 1.2rem;
+        min-width: 50px
+    }
 
 }
