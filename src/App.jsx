@@ -10,7 +10,7 @@ export const KEY = "accounts";
 function App() {
   const [name, setName] = useState("");
   const [lastName, setLastName] = useState("");
-  const [balance, setBalance] = useState(0);
+  const [balance] = useState(0);
   const [amount, setAmount] = useState(0);
   const [accounts, setAccounts] = useState(null);
   const [lastUpdate, setLastUpdate] = useState(Date.now());
