@@ -85,7 +85,6 @@ function App() {
                   <div className="card-body">
                     <div className="card-title">
                       <fieldset>
-                        <legend>Informacija</legend>
                         <div>
                           <legend>
                             Vardas:
@@ -115,13 +114,13 @@ function App() {
             </div>
             <div className="col-12">
               <div className="card mt-4">
-                <h1 className="card-header">Sąrasas</h1>
+                <h1 className="card-header">Sąrašas</h1>
                 <div className="card-body"></div>
                 <table className="table table-striped">
                   <thead>
                     <tr>
                       <th>Sąrašas</th>
-                      <th>Pinigų balansas</th>
+                      <th>Sąskaitos balansas</th>
                       <th>Suma</th>
                       <th></th>
                       <th></th>
@@ -140,9 +139,8 @@ function App() {
                             <input
                               type="number"
                               min="0"
-                              step="0.01"
                               value={account.amount}
-                              placeholder="Money"
+                              placeholder=""
                               onChange={handleChangeAmount}
                             />
                           </td>
